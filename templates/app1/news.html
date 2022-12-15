@@ -1,0 +1,40 @@
+{% extends "app1/home.html" %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+{% block body_block %}
+
+<center>
+	<h2> NEWS </h2>
+
+<table class="table table-success table-striped" border="2px">
+	<thead>
+		<th>Details</th>
+	</thead>
+
+  {% for i in n %}
+
+<tr>
+	<td>{{i.Occations}}</td>
+
+</tr>
+
+ {% endfor %}
+	
+</table>
+
+<br>
+
+<a href="/cal" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">  CALANDER HOLIDAYS  </a>
+
+</center>
+
+{% endblock %}
+
+</body>
+</html>

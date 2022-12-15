@@ -1,0 +1,34 @@
+{% extends "app1/home.html" %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HR Section</title>
+</head>
+<body>
+
+{% block body_block %}
+<center>
+	<h2>  HR - Section  </h2>
+<h3>
+<a href="/Empform" class="btn btn-info btn-lg active" role="button" aria-pressed="true">  ADD EMPLOYEE  </a>
+
+
+<a href="/EmpData" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">  VIEW EMPLOYEE DATA  </a>
+
+<br>
+
+<h3>
+<a href="/AddNews" class="btn btn-success btn-lg active" role="button" aria-pressed="true">  ADD LATEST NEWS  </a>
+
+<a href="/AddCal" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">  ADD CALANDER  </a>
+</h3>
+
+<br>
+<a href="/logout" class="btn btn-info"><button> Logout </button></a>
+
+</center>
+
+{% endblock %}
+</body>
+</html>

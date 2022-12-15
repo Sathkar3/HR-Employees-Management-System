@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+<link rel = "stylesheet" href = "{%static "css/style.css" %}" >
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+style="background-color: blue;" >
+  <a class="navbar-brand" href="#">ElearnInfoTech</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/hr">HR MANAGER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/Emp">EMPLOYEE</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+{% block body_block %}
+
+<center>
+
+	<img src = "{%static "/images/Dj.jpg" %}"  style="max-width: 100%;" >
+
+
+	<h2 style="background-color: skyblue"> <strong> Welcome To Elearn InfoTech </strong> </h2>
+
+<h5> ELearn Infotech is a Realtime Training Company offering Courses on varied IT Technologies like Web Design & PHP with MySQL, Digital Marketing, UI/UX Designing & Development, Oracle Modules, Angularjs, Node.js, Python, Fullstack Development, SAP Moddules, Cloud Computing, Graphic Designing, Tally ERP9, Autocad etc. Established in 2016 ELearn Infotech has successfully Trained upwards of 15,000+ Students. ELearn Infotech offers Excellent Software courses with end to end support to the candidates. ELearn Infotech is a one stop shop for IT services & Training in Madhapur,Hyderabad. </h5>
+</center>
+
+{% endblock %}
+</body>
+</html>

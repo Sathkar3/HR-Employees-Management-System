@@ -1,0 +1,30 @@
+{% extends "app1/home.html" %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Employee Form </title>
+</head>
+<body>
+
+{% block body_block %}
+
+<center> <h2> <strong>~  Employee Form ~</strong> </h2>
+
+<form method="POST">
+
+	{%csrf_token%}
+	{{f.as_p}}
+
+     
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</center>
+
+{% endblock %}
+
+</body>
+</html>   
